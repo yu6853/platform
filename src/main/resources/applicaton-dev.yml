@@ -1,0 +1,11 @@
+# src/main/resources/application-dev.yml
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/parameter_management_dev
+    username: dev_user
+    password: dev_password
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+  jpa:
+    show-sql: true
